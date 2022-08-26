@@ -1,0 +1,372 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+header{
+    height: 80px;
+    width: 1300px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(39, 39, 142);
+    color: white;
+    font-size: 85%;
+}
+header h1{
+    font-size: 40px;
+    align-self: end;
+    padding: 0 0 5px 20px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+.signup-check input{
+    align-items: center;
+    margin: 0 5px 0 0;
+} 
+.signup-check{
+    display: flex;
+}
+.signup li{
+    font-size: 13px;
+}
+.signup li:last-child{
+    align-self: center;
+}
+.signup{
+    display: flex;
+}
+.signup li{
+    margin: 10px 20px;
+}
+.signup button{
+    font-weight: bold;
+    background-color: rgb(49, 83, 151);
+    cursor: pointer;
+    color: white;
+}
+.signup button:hover{
+    transform: translateY(-1px);
+}
+.signup button:active{
+    transform: translateY(1px);
+}
+main{
+    display: flex;
+    background-color: rgb(226, 247, 255);
+}
+aside{
+    flex-basis: 60%;
+}
+
+article{
+    padding-right: 15px;
+    flex-basis: 40%;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid gray;
+}
+.language ul, .items ul{
+    font-size: 12px;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: row;
+    
+}
+.language li, .items li{
+    margin-right: 5px;
+}
+hgroup{
+    margin: 20px 0;
+    font-size: 150%;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+.name input{
+    flex-basis: 49%;
+    
+}
+.mail input{
+    flex-basis: 98%;
+}
+.connect-friend h2:first-child{
+    padding: 50px 0 0 0;
+}
+.connect-friend h2:last-child{
+    padding-bottom: 50px;
+}
+.connect-friend{
+    padding-left: 10px;
+}
+.iconconnect, .share-time ,.find-frien{
+    display: flex;
+    padding: 20px;
+}
+aside span, aside strong{
+    align-self: center;
+    padding-left: 20px;
+}
+.fa-solid{
+    font-size: 50px;
+    color: gray;
+}
+.connect-friend h2{
+    font-size: 180%;
+}
+.mail{
+    display: flex;
+    flex-direction: column;
+}
+.mail input, .name input{
+    background-color: aliceblue;
+    border-radius: 4px;
+    margin: 5px;
+    border: .1px solid gray;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.birth p{
+    font-size: 120%;
+    padding: 7px 0;
+}
+.birth-day{
+    display: block;
+}
+.birth-day a{
+    font-size: 12px;
+    padding-left: 10px;
+}
+.birth-day select{
+    padding: 5px;
+    border-radius: 3px;
+    background-color: aliceblue;
+}
+.sexual{
+    padding: 10px;
+}
+.policy{
+    font-size: 75%;
+}
+.policy p{
+    color: rgb(89, 89, 89);
+}
+.btn-signup button{
+    margin: 10px 0;
+    font-size: 130%;
+    font-weight: bold;
+    padding: 7px 60px;
+    border-radius: 10px;
+    background-color: rgb(25, 175, 35);
+    color: white;
+}
+.btn-signup{
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+}
+.btn-signup button{
+    cursor: pointer;
+}
+.btn-signup button:hover{
+    transform: translateY(-1px);
+}
+.btn-signup button:active{
+    transform: translateY(1px);
+}
+.create-page{
+    padding-top: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.language{
+    margin: 0 10px;
+    border-bottom: 1px solid gray;
+}
+.language li{
+    padding-right: 10px;
+}
+.items{
+    padding-left: 10px;
+}
+
+.items li{
+    margin-right: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(50, 50, 174);
+}
+
+.menu__tablet, .mobile, .main__tablet{
+    display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+    header, article{
+        display: none;
+    }   
+    aside{
+        justify-content: start;
+    }
+    .menu__tablet{
+        display: block;
+        align-self: center;
+        height: 40px;
+        width: 100%;
+        text-align: right;
+        background-color: rgb(39, 39, 142);
+    }
+    aside{
+        flex-basis: 100%;
+    }
+    aside ul li{
+        justify-content: start;
+    }
+    .menu__table{
+       
+    }
+    .menu__tablet i{
+        font-size: 25px;
+        padding: 7px 10px 0 0;
+        color: white;
+    }
+    .main__tablet{
+        width: 300px;
+        height: 512px;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        background-color: rgb(244, 244, 244);
+    }    
+    .main__tablet a{
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+    }
+    .footer ul li{
+        flex-wrap: nowrap;
+    }
+    .main__tablet--menu ul{
+        
+        width: 98%;
+    }
+    .main__tablet--list li{
+        padding: 10px;
+    }
+    .menu__tablet input:checked~.main__tablet{
+        display: block;        
+    }
+    .menu__tablet input:checked~.menu__tablet--ovelay{
+        display: block;
+    }
+    .menu__tablet--ovelay{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        display: none;
+    }
+    .main__tablet--menu i{
+        position: relative;
+        top: 15px;
+        right: 250px;
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    header, aside, article, footer, .main__tablet, .menu__tablet{
+        display: none;
+    }
+    .mobile{
+        display: block;
+        width: 420px;
+        max-width: 94%;
+        margin: 0 auto;
+    }
+    main{
+        background-color: white;
+    }
+    .mainmain-form{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .mainmain-form input{
+        margin:5px 0;
+        padding: 10px 10px;
+        border-radius: 5px;
+        border: .1px solid gray;
+    }
+    .mainmain-form h3{
+        text-align: center;
+        font-size: 20px;
+        color: blue;
+        padding: 10px 0;
+    }
+    .mainmain-form input:nth-of-type(3){
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .mainmain-form a{
+        text-align: center;
+        padding: 5px 0;
+        color: blue;
+    }
+    .mainmain-form span{
+        text-align: center;
+    }
+    .mainmain-form span::before{
+       
+    }
+    .mainmain-form input:last-child{
+        width: 40%;
+        align-self: center;
+        font-weight: bold;
+        background-color: green;
+        color: white;
+        cursor: pointer;
+    }
+    .language-mobile{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+        font-size: 12px;
+    }
+    .about ul{
+        padding-top: 30px;
+        font-size: 12px;
+        list-style: disc;
+        justify-content: center;
+        display: flex;
+        flex-direction: row;
+    }
+    .about ul li{
+        padding-right: 20px;
+    }
+    .footermain div p{
+        font-size: 10px;
+        padding: 10px;
+        text-align: center;
+    }
+    .menu__tablet--ovelay{
+        display: none;
+    }
+}

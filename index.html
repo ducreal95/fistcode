@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="facebook.ico" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="main.js">
+    <title>Facebook - Log in or Sign up</title>
+</head>
+<body>
+    <header>
+        <h1><a href="#">facebook</a></h1>
+        <form action="/" method="GET">
+            <ul class="signup">
+                <li>
+                    <h5>Email or Phone</h5>
+                    <input type="text" required>
+                    <div class="signup-check">
+                        <input type="checkbox" value="checked" name="keep-login" id="login">
+                        <label for="login">Keep me logged in</label>
+                    </div>
+                </li>
+                <li>
+                    <h5>Password</h5>
+                    <input type="password" maxlength="8" required>
+                    <div><a href="#">Forgot your password?</a> </div>
+                </li>
+                <li>
+                    <button type="submit">Log in</button>
+                </li>
+            </ul>
+        </form>
+    </header>
+    <div class="menu__tablet">
+        <label for="menu__tablet--2"><i class="fa-solid fa-bars"></i></label>
+        <input type="checkbox" id="menu__tablet--2" hidden>
+        <label class="menu__tablet--ovelay" for="menu__tablet--2"></label>
+        <div class="main__tablet">
+            <div class="main__tablet--menu">
+                <label for="menu__tablet--2"><i class="fa-solid fa-xmark"></i></label>
+                <ul class="main__tablet--list">
+                    <li><a href="">Log in</a></li>
+                    <li><a href="">Creat New Acount</a></li>
+                    <li><a href="">Forgot your password</a></li>
+                </ul>
+            </div> 
+        </div>
+    </div>
+    <main>
+        
+        <aside>
+            <div class="connect-friend">
+                <h2>
+                    Connect with friend and the 
+                </h2>
+
+                <h2>
+                    world around you on Facebook.
+                </h2>
+
+            </div>
+            <ul>
+                <li class="iconconnect">
+                    <i class="fa-solid fa-image"></i> <strong>See photos and updates </strong> <span>from friend in New
+                        Feed.</span>
+                </li>
+                <li class="share-time">
+                    <i class="fa-solid fa-bullhorn"></i> <strong>Share what's new </strong><span>in your life on your
+                        Timeline.</span>
+                </li>
+                <li class="find-frien">
+                    <i class="fa-solid fa-share-nodes"></i> <strong>Find more </strong> <span>of what's you're for with
+                        Graph Seach. </span>
+                </li>
+            </ul>
+        </aside>
+        <article>
+            <hgroup>
+                <h1>Sign Up</h1>
+                <p>It's free and always will be.</p>
+            </hgroup>
+            <form method="post">
+                <div class="name">
+                    <input type="text" placeholder="First name" name="fistname" pattern="[a-zA-Z ]{1,20}" required>
+                    <input type="text" placeholder="Last name" name="lastname" pattern="[a-zA-Z ]{1,20}" required>
+                </div>
+                <div class="mail">
+                    <input type="email" name="email" placeholder="Email or mobile number" required>
+                    <input type="emailconfirm" name="verify" placeholder="Re-enter email or mobile number" required>
+                    <input type="password" name="password" placeholder="New password" maxlength="8" required>
+                </div>
+                <div class="birth">
+                    <p>Birthday</p>
+                    <div class="birth-day">
+                        <select name="day" id="month">Day
+                            <option value="Month">Month</option>
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                            <option value="5">05</option>
+                        </select>
+                        <select name="day" id="day">Day
+                            <option value="Day">Day</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <select name="day" id="year">Day
+                            <option value="year">Year</option>
+                            <option value="1992">1992</option>
+                            <option value="1993">1993</option>
+                            <option value="1994">1994</option>
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                        </select>
+                        <a href="#">Why do I need to provide my Birthday?</a>
+                    </div>
+                </div>
+
+                <div class="sexual">
+                    <input type="radio" value="Male" name="1" id="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" value="Female" name="1" id="female" required>
+                    <label for="female">Female</label>
+                </div>
+                <div class="policy">
+                    <p>By click Sign Up, you agree to our <a href="#">Terms</a> and
+                        that you have read our <a href="#">Data Use Policy</a>, including
+                        our <a href="#"> Cookie Use</a></p>
+                </div>
+                <div class="btn-signup">
+                    <button value="submit">Sign Up</button>
+                </div>
+                <div class="create-page">
+                    <strong> <a href="#">Create a page </a> for a celebrity, band or business </strong>
+                </div>
+            </form>
+        </article>
+        <div class="mobile">
+            <div class="mainmain">
+                <form action="">
+                    <div class="mainmain-form">
+                        <h3>facebook</h3>
+                        <input type="text" placeholder="user name" required>
+                        <input type="password" placeholder="password" required>
+                        <input type="submit" value="Log in">
+                        <a href="#">Forgotten password?</a>
+                        <span>or</span>
+                        <input type="button" value="Creat New Account">
+                    </div>
+                </form>
+            </div>
+            <div class="footermain">
+                <div class="language-mobile">
+                    <ul>
+                        <li>English (us)</li>
+                        <li>English (us)</li>
+                        <li>English (us)</li>
+                        <li>English (us)</li>
+                    </ul>
+
+                    <ul>
+                        <li>English (us)</li>
+                        <li>English (us)</li>
+                        <li>English (us)</li>
+                        <li>English (us)</li>
+                    </ul>
+                </div>
+                <div class="about">
+                    <ul>
+                        <li>about</li>
+                        <li>help</li>
+                        <li>more</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>Meta &copy; 2022</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="language">
+            <ul>
+                <li><a href="#">English (US)</a></li>
+                <li><a href="#">English (US)</a></li>
+                <li><a href="#">English (US)</a></li>
+                <li><a href="#">English (US)</a></li>
+                <li><a href="#">English (US)</a></li>
+                <li><a href="#">English (US)</a></li>
+                <li><a href="#">English (US)</a></li>
+                <li><a href="#">English (US)</a></li>
+                <li><a href="#">English (US)</a></li>
+                <li><a href="#">English (US)</a></li>
+                <li><a href="#">English (US)</a></li>
+            </ul>
+        </div>
+        <div class="items">
+            <ul>
+                <li><a href="#">Sign Up</a></li>
+                <li><a href="#">Log in</a></li>
+                <li><a href="#">Mobile</a></li>
+                <li><a href="#">FindFriend</a></li>
+                <li><a href="#">Badges</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">Games</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
